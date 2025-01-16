@@ -25,3 +25,5 @@
 -- | Ian        | Happ      |
 
 
+
+-----WHERE year =2020 AND team ="Chicago White Sox"

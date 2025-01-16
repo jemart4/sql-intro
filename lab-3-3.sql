@@ -16,3 +16,25 @@
 -- | 2004 | St. Louis Cardinals           | 105       |
 
 
+SELECT year , MAX(wins) FROM teams
+WHERE year >=1960
+
+GROUP BY year
+ORDER BY wins DESC
+;
+
+
+
+--if 2 teams have the max number of wins, it will collapse both names and just pick one
+--this kind of works
+-- insead, wrap by using the code below 
+
+
+--- SELECT year FROM(
+---SELECT year , name, MAX(wins) FROM teams
+---WHERE year >=1960
+
+---GROUP BY year
+---ORDER BY wins DESC)
+---;
+
