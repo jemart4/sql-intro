@@ -27,3 +27,10 @@
 
 
 -----WHERE year =2020 AND team ="Chicago White Sox"
+
+
+SELECT players.first_name, players.last_name FROM stats 
+INNER JOIN teams ON stats.team_id = teams.id
+INNER JOIN players ON stats.player_id = players.id
+WHERE teams.name = "Chicago Cubs" AND teams.year = 2020
+;
