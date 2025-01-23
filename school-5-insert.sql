@@ -18,3 +18,6 @@ email
 );
 
 --values must be in same order as INSERT INTO COMMAND
+
+
+----finsihed code is in the notes linked online 
